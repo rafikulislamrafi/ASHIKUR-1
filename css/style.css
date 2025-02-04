@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --font-family: 'Poppins', sans-serif;
+  --second-family: 'PT Sans', sans-serif;
+  --third-family: 'Potta One', sans-serif;
+  --font3: 'Baloo Da 2', sans-serif;
+}
+/* Common text styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+span {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: var(--font-family);
+}
+/* Common text styles */
+/*====== Nav Bar Start ======*/
+nav img {
+  width: 130px;
+}
+#navbarSupportedContent ul li a {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 200%;
+  color: #353535;
+  padding: 18px 22px 5px;
+  position: relative;
+}
+#navbarSupportedContent ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #fc0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.4s;
+}
+#navbarSupportedContent ul li:hover a::after,
+#navbarSupportedContent ul li a.active::after {
+  width: 100%;
+}
+.navbar-toggler {
+  border: none;
+}
+/*====== Nav Bar End ======*/
+/*======  Hero Section Start ======*/
+#hero-section {
+  height: 800px;
+}
+#hero-section .hero-cnt h6 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: #353535;
+  /* margin-top: 160px; */
+}
+#hero-section .hero-cnt h2 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 64px;
+  color: #353535;
+  margin: 15px 0 25px 0;
+}
+#hero-section .hero-cnt p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 190%;
+  color: #353535;
+  margin-bottom: 75px;
+}
+#hero-section .hero-cnt .telk {
+  border-radius: 20px;
+  width: 209px;
+  height: 69px;
+  background: #fc0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 180%;
+  color: #fff;
+  padding: 15px 54px;
+  margin-right: 40px;
+}
+#hero-section .hero-cnt .telk:hover {
+  background: #fff;
+  color: #fc0;
+  outline: 1px solid #fc0;
+}
+#hero-section .hero-cnt .download {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 180%;
+  color: #353535;
+  border: 1px solid #000;
+  border-radius: 20px;
+  width: 209px;
+  height: 69px;
+  padding: 15px 18px;
+}
+#hero-section .hero-cnt .download:hover {
+  background-color: #fc0;
+  border: 1px solid #fc0;
+  color: #fff;
+}
+#hero-section .hero-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  width: 615px;
+  height: 623px;
+  margin-top: 90px;
+  position: relative;
+}
+#hero-section .hero-img .img-card {
+  position: absolute;
+  width: 155px;
+  height: 167px;
+  left: 0;
+  bottom: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+  background: #fff;
+}
+#hero-section .hero-img .img-card img {
+  margin-top: 22px;
+  margin-left: 50px;
+}
+#hero-section .hero-img .img-card h5 {
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  color: #353535;
+  margin: 8px 0 3px 0;
+}
+#hero-section .hero-img .img-card p {
+  font-weight: 500;
+  font-size: 8px;
+  text-align: center;
+  color: #7a7a7a;
+  margin: 3px 0 10px 0;
+}
+#hero-section .hero-img .img-card h6 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  color: #353535;
+  margin-top: 10px;
+}
+#hero-section .hero-cnt .follow p span {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 180%;
+  color: #353535;
+}
+#hero-section .hero-cnt .follow p a {
+  color: #000;
+  width: 40px;
+  height: 40px;
+  background: #f4f3f3;
+  padding: 10px 12px;
+  border-radius: 50%;
+  margin: 75px 18px;
+  transition: 0.3s;
+}
+#hero-section .hero-cnt .follow p a:hover {
+  background-color: #fc0;
+  color: #fff;
+}
+/* ======  Hero Section End ====== */
+/* ======  About Section Start ====== */
+#about-section {
+  height: 556px;
+  background: linear-gradient(130deg, #fc0 0%, #faffcb 100%, #faffcb 100%);
+}
+#about-section .about-img img {
+  width: 85%;
+  height: 100%;
+  object-fit: cover;
+}
+#about-section .about-cnt h2 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 50px;
+  color: #353535;
+  margin-top: 78px;
+}
+#about-section .about-cnt p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 190%;
+  color: #353535;
+  margin: 26px 0 45px 0;
+}
+#about-section .about-cnt .btn {
+  font-weight: 500;
+  font-size: 18px;
+  color: #353535;
+  border: 1px solid #000;
+  border-radius: 20px;
+  width: 171px;
+  height: 66px;
+  justify-content: center;
+  text-align: center;
+  line-height: 300%;
+}
+@media (max-width: 768px) {
+  #about-section  {
+    display: none;
+  }
+}
+
+
+
+
+/* ======  About Section End ====== */
